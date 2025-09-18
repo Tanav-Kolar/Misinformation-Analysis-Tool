@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Misinformation Reporter",
+  "version": "1.0",
+  "description": "Select an area of the screen to send for analysis.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "contextMenus"
+  ],
+  "action": {
+    "default_title": "Misinformation Reporter",
+    "default_icon": {
+      "128": "icons/icon.png"
+    }
+  },
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
