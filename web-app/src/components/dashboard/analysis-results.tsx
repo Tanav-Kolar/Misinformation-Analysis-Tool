@@ -15,7 +15,7 @@ import {
   Info,
   Globe,
   BookCheck,
-  Link,
+  LinkIcon,
   ShieldQuestion,
 } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
@@ -140,7 +140,7 @@ export function AnalysisResults({ result }: AnalysisResultsProps) {
                                 rel="noopener noreferrer"
                                 className="mt-2 inline-flex items-center gap-1 text-sm text-primary underline-offset-4 hover:underline"
                               >
-                                <Link className="size-3" />
+                                <LinkIcon className="size-3" />
                                 View Source
                               </a>
                             )}
