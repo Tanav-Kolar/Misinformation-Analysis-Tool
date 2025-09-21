@@ -3,8 +3,6 @@
 **Last Updated:** September 21, 2025  
 
 [![Cloud Run](https://img.shields.io/badge/Deployed%20on-Google%20Cloud%20Run-blue?logo=googlecloud)](https://cloud.google.com/run)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-
 ---
 
 ## 1. Overview  
