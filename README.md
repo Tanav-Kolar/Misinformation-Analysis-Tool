@@ -29,29 +29,7 @@ The pipeline is built around **specialized AI agents**, each handling a specific
 
 ### Architecture Diagram  
 
-```
-
-\[Input: Text/URL/Image(Base64)]
-|
-v
-\[1. Claims Extractor Agent] --(uses)--> \[ScraperAPI / OCR Engine]
-|
-v
-\[   2. Parallel Research Agent   ]
-/         &#x20;
-v            v
-\[2a. Web Scraper Agent]   \[2b. Fact Checker Agent]
-\|                      |
-(uses) \[Google Search API]   (uses) \[Google Fact Check API]
-\          /
-v
-\[3. Report Generator Agent]
-|
-v
-\[Output: Structured JSON Report]
-
-````
-
+![Architecture Diagram](https://github.com/Tanav-Kolar/RAG_Baiters_Misinformation_GenAI_Exchange_Hack/blob/main/Architecture_Diagram.png?raw=true)
 ---
 
 ### Agent Breakdown  
