@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* --- Shared Modal Base Styles --- */
+.verifact-modal {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    z-index: 999999;
+    font-family: 'Inter', sans-serif;
+    color: #1a202c;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* --- Loading State Modal --- */
+#verifact-loading-modal {
+    width: 300px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f4f6;
+    border-top: 4px solid #4f46e5;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    flex-shrink: 0;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+/* --- Result Modal Styles (Unchanged but using base class now) --- */
+#verifact-result-modal {
+    width: 400px;
+    max-height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ... (rest of the result modal styles from the previous version remain unchanged) ... */
+
+#verifact-result-modal .header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-bottom: 1px solid #e2e8f0; flex-shrink: 0; }
+#verifact-result-modal .title { font-size: 16px; font-weight: 600; }
+#verifact-result-modal .close-btn { background: none; border: none; font-size: 24px; line-height: 1; cursor: pointer; color: #a0aec0; padding: 4px; }
+#verifact-result-modal .close-btn:hover { color: #4a5568; }
+#verifact-result-modal .content { padding: 16px; overflow-y: auto; }
+.summary-section { margin-bottom: 20px; }
+.summary-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.summary-title { font-size: 16px; font-weight: 600; color: #2d3748; }
+.summary-text { font-size: 14px; line-height: 1.6; color: #4a5568; }
+.overall-tag { padding: 4px 10px; border-radius: 9999px; font-size: 12px; font-weight: 600; text-transform: uppercase; }
+.tag-false { background-color: #fed7d7; color: #c53030; }
+.tag-true { background-color: #c6f6d5; color: #2f855a; }
+.tag-unverified { background-color: #feebc8; color: #b7791f; }
+.claims-title { font-size: 16px; font-weight: 600; color: #2d3748; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #edf2f7; }
+.claims-container { display: flex; flex-direction: column; gap: 16px; }
+.no-claims { font-size: 14px; color: #718096; text-align: center; padding: 20px 0; }
+.claim-card { background-color: #f7fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; }
+.claim-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.claim-text { font-size: 14px; font-weight: 500; color: #2d3748; flex-grow: 1; }
+.claim-conclusion { flex-shrink: 0; padding: 3px 8px; border-radius: 6px; font-size: 12px; font-weight: 600; }
+.conclusion-true { background-color: #9ae6b4; color: #276749; }
+.conclusion-false { background-color: #feb2b2; color: #9b2c2c; }
+.evidence { margin-top: 12px; padding-top: 12px; border-top: 1px dashed #cbd5e0; }
+.evidence-title { font-size: 12px; font-weight: 600; color: #718096; margin-bottom: 4px; text-transform: uppercase; }
+.evidence-text { font-size: 13px; line-height: 1.5; color: #4a5568; }
+
