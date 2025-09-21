@@ -1,4 +1,4 @@
-# VeriFact: Misinformation Analysis Pipeline
+# VeriFact: Misinformation Analysis App
 
 **Last Updated:** September 21, 2025  
 
